@@ -1,0 +1,15 @@
+---
+# defaults file for setup-lit
+install_packages:
+  - vim
+  - ansible
+  - zsh
+
+uninstall_packages: []
+
+add_users:
+  - name: "lit"
+    comment: "lituser"
+    shell: "/bin/zsh"
+  - name: user0815
+    comment: "lituser"

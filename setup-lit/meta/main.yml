@@ -1,0 +1,14 @@
+---
+galaxy_info:
+  author: Bernd Mueller
+  role_name: setuplit
+  namespace: mb
+  description: setup some examples
+  license: GPL-3.0-only
+  min_ansible_version: "2.1"
+  platforms:
+    - name: Fedora
+      versions:
+        - all
+
+dependencies: []
