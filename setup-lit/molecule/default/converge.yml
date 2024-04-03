@@ -1,0 +1,9 @@
+---
+- name: Converge
+  hosts: all
+  tasks:
+    - name: "Include setup-lit"
+      ansible.builtin.include_role:
+        name: "mb.setuplit"
+
+# code: language=ansible

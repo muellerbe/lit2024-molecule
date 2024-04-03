@@ -1,0 +1,18 @@
+dependency:
+  name: galaxy
+  options:
+    requirements-file: requirements.yml
+platforms:
+  - name: fedora39
+    image: quay.io/fedora/fedora:39
+    pre_build_image: true
+  - name: fedora38
+    image: quay.io/fedora/fedora:38
+    pre_build_image: true
+driver:
+  name: podman
+  options:
+    managed: False
+    login_cmd_template: "podman exec -ti {instance} bash"
+    ansible_connection_options:
+      ansible_connection: podman
